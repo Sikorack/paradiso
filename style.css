@@ -1,0 +1,326 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+	scroll-behavior: smooth; //odpowiada za płynne przewijanie strony i zachowanie scrolla
+}
+body {
+    background-color:#F6F6F4;
+}
+.zdjecie-kucharza{
+    background-image: url(PNG/header/Header.png);
+    height: 1000px;  
+}
+/* HEADER */
+    .header {
+        width: 100%;
+        height: 115px;
+        background-color: rgba(0, 0, 0, 0.5);
+    }
+    .logo {
+        width: 106px;
+        margin-left: 30px;
+        float:left;
+    }
+    .header li {
+        font-size: 36px;
+        padding: 14px;
+        color: #F6F6F4;
+        font-family: "Lobster", sans-serif;
+        float:right;
+        align-items: center;
+        line-height: 80px;
+        height: 80px;
+    }
+    .nazwa-header{
+        float:left; 
+        font-size: 48px;
+        padding: 14px;
+        color: #F6F6F4;
+        font-family: "Lobster", sans-serif;
+        align-items: center;
+        line-height: 80px;
+        height: 80px;
+    }
+    a:link,a:visited,a:focus {
+    color: #F6F6F4;
+    }
+    .header li a:hover {
+        border-bottom: solid #F6F6F4;;
+    }
+
+
+/* WSTĘP */
+    .wstep{
+        min-height: 996px;
+    }
+    .duzyTekstWstepu{
+        font-size: 96px;
+        color: #F6F6F4;
+        margin-left: 45px;
+        margin-right: 45px;
+        margin-top:300px;
+        font-family: "Montserrat", sans-serif;
+        font-weight: 800;
+    }
+    .malyTekstWstepu{
+        font-size: 20px;
+        color: #F6F6F4;
+        margin-left: 50px;
+        margin-right: 50px;
+        width: 866px;
+        font-family: "Montserrat", sans-serif;
+    }
+    .przyciskWstepu{
+        background-color: #980000;
+        color:#F6F6F4;
+        border: none;
+        width: 314px;
+        height: 89px;
+        font-size: 32px;
+        border-radius: 15px;
+        margin-left: 50px;
+        font-family: "Montserrat", sans-serif;
+        font-weight: 700;
+        padding:20px;
+    }
+    .przyciskWstepu:hover{
+        background-color: #5c0000;
+    }
+
+/* NAGŁÓWKI */
+    .naglowekCzerwony{
+        color: #980000;
+        font-family: "Lobster", sans-serif;
+        font-size: 48px;
+        margin-left:50px;
+        margin-right:50px;  
+    }
+    .naglowekCzerwonySrodek{
+        color: #980000;
+        font-family: "Lobster", sans-serif;
+        font-size: 48px;
+        text-align:center;
+    }
+    .naglowekCzarny{
+        color:#2C2C2C;
+        font-family: "Montserrat", sans-serif;
+        font-weight: 800;
+        font-size: 64px;
+        margin-left:50px;
+    }
+    .naglowekCzarnySrodek{
+        color:#222222;
+        font-family: "Montserrat", sans-serif;
+        font-weight: 800;
+        font-size: 64px;
+        text-align:center;
+    }
+/* O NAS + HISTORIA RESTAURACJI */
+    .o-nas, .historia-restauracji{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    .tekst1{
+        color:#222222;
+        font-family: "Montserrat", sans-serif;
+        font-size: 30px;
+        margin-left:50px;
+        width: 100%;
+    }
+    .duze-napisy{
+        margin-left:50px;
+        display: flex;
+
+    }
+    .duzy-czerwony{
+        font-size: 128px;
+        color:#980000;
+        font-family: "Montserrat", sans-serif;
+        font-weight: 600;
+    }
+    .maly-czarny{
+        font-size: 36px;
+        color:#222222;
+        font-family: "Montserrat", sans-serif;
+        margin-top: 40px;
+        margin-left:20px;
+        align-items: center;
+    }
+    .pojedyncze-zdjecie{
+        transition: transform 0.3s ease;
+    }
+    .pojedyncze-zdjecie:hover{
+        transform: scale(1.1);
+    }
+    .zdjecia{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap:10px;
+        justify-self: end;
+        margin-right:50px;
+    }
+/* MENU */
+.menu{
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    text-align: center;
+    margin-left:50px;
+    margin-right:50px;
+    color: #222222;
+}
+.pojedyncza-kategoria{      
+    padding:10px;
+    align-items: center;
+    display: grid;
+}
+.kategoria-w-menu{
+    padding: 10px;
+}
+.zdjecie-opis-jedzenia{
+    display:grid;
+    grid-gap: 10px;
+    grid-template-columns: 1fr 1fr;
+    text-align: center;
+    align-items: center;
+    margin-top:10px;
+}
+.nazwa-potrawy{
+    color:#222222;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    font-size: 28px;
+}
+.opis-potrawy{
+    color:#222222;
+    font-family: "Montserrat", sans-serif;
+    font-size: 20px;
+}
+.zdjecie-jedzenia{
+    border-radius: 15px;
+    transition: transform 0.3s ease;
+    width: 100%;
+
+}
+.zdjecie-jedzenia:hover{
+	box-shadow: -2px 2px 24px 11px rgba(255, 255, 255, 1);
+    transform: scale(1.1);
+}
+
+
+/* OPINIE */
+    .trzy-opinie{
+        margin-left:50px;
+        margin-right:50px;
+        display: grid;
+        grid-gap: 10px;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    .opinia{
+
+        background-color: #D9D9D9;
+        padding: 20px;
+        border-radius: 25px;
+    }
+    .tekst-opini{
+        font-size: 25px;
+        color:#222222;
+        font-family: "Montserrat", sans-serif;
+        margin-top:10px;
+    }
+    .nazwisko-opinia{
+        font-size: 48px;
+        color:#222222;
+        font-family: "Montserrat", sans-serif;
+        font-weight: 700;
+        margin-left:10px;
+    }
+    .imie-opinia{
+        font-size: 48px;
+        color:#222222;
+        font-family: "Montserrat", sans-serif;
+        margin-left:10px;
+    }
+    .osoba{
+        display: flex;
+        align-items: center;
+    }
+/* LOKALIZACJA */
+    .mapa{
+        margin-left: 50px;
+        margin-right: 50px;
+        width: calc(100% - 100px);
+    }
+/* KONTAKT I GODZINY OTWARCIA */
+.kontener-kontakt{
+    margin-left:300px;
+    margin-right:300px;
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: 1fr 1fr;
+}
+.kontakt{
+    background-color: #222222;
+    padding: 20px;
+    border-radius: 25px;
+}
+.kontaktTekst{
+    font-size: 1.302vw;
+    color:#D9D9D9;
+    font-family: "Montserrat", sans-serif;
+    margin-top:10px;
+    text-align: center;
+}
+.naglowekKontakt{
+    font-size:1.7vw;
+    color:#D9D9D9;
+    font-family: "Montserrat", sans-serif;
+    margin-top:10px;
+    font-weight: 600;
+    text-align: center;
+    
+}
+.kontakt-otwarcie{
+    margin-bottom: 20px;
+}
+.kontener-na-tekst{
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    gap:10px;
+}
+/* STOPKA */
+    .stopka{
+        width: 100%;
+        background-color: #222222;
+        color: #F6F6F4;
+        padding-top: 50px;
+        box-sizing: border-box;
+        display:grid;
+    }
+    .nazwa-stopka{
+        font-size:48px;
+        font-family: "Lobster", sans-serif;
+    }
+    .stopka-logo-nazwa{
+        text-align: center;
+        justify-content: center;
+        padding-top: 50px;
+    }
+    .przycisk-stopka{
+        background-color: #980000;
+        color:#F6F6F4;
+        border: none;
+        font-size: 32px;
+        border-radius: 15px;
+        font-family: "Montserrat", sans-serif;
+        font-weight: 700;
+        padding:20px;   
+    }
+    .przycisk-stopka:hover{
+        background-color: #5c0000;
+    }
