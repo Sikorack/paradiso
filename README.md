@@ -28,3 +28,4 @@ Strona prezentuje wirtualną włoską restaurację "La Pasta Paradiso" i zawiera
 - CSS3 (w tym media queries dla responsywności)
 - Ikony i obrazy w formacie PNG
 - Integracja z mapami Google
+![Screenshot 2025-02-27 at 23-05-51 La Pasta Paradiso](https://github.com/user-attachments/assets/2d34d62e-9b7a-44f5-9960-80de1874771f)
